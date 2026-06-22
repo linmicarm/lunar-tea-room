@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lunar Tea Room · Tarot with Selene</title>
+  <meta name="description" content="Cozy, judgment-free tarot readings. Pull a card for free, then book a session with Selene." />
+
+  <!-- Google Fonts: Cormorant Garamond (serif display) + Jost (sans body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAV ===================== -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#top" class="brand">
+        <span class="moon-mark" aria-hidden="true"><span class="mm-moon"></span></span>
+        <span class="brand-name">Lunar Tea Room</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-pill">About</a></li>
+        <li><a href="#services" class="nav-pill">Readings</a></li>
+        <li><a href="#pull" class="nav-pill">Free Pull</a></li>
+        <li><a href="#testimonials" class="nav-pill">Love Notes</a></li>
+        <li><a href="#book" class="nav-pill nav-book">Book</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <header class="hero" id="top">
+    <!-- Full-bleed photo backdrop. PLACEHOLDER (hotlinked for preview).
+         Before deploy: download a chosen Unsplash photo into
+         assets/hero.jpg and point the url below at it, keeping the
+         photographer credit. -->
+    <div class="hero-photo" aria-hidden="true"></div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <h1>The cards remember<br />what you <em>already know</em></h1>
+      <p class="hero-lede">Slow, unhurried readings for the questions you keep circling back to. Pull a card now, or book a longer sitting. No appointment needed to start.</p>
+      <div class="hero-cta">
+        <a href="#pull" class="btn btn-primary">Pull a Free Card</a>
+        <a href="#book" class="btn btn-ghost">Book a Session</a>
+      </div>
+    </div>
+    </div>
+  </header>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="band about" id="about">
+    <div class="band-inner">
+    <div class="about-grid">
+      <div class="about-portrait">
+        <!-- Reader portrait by Kyle Kioko (Unsplash, free license).
+             For deploy, download into assets/reader.jpg and swap the url. -->
+        <img src="https://images.unsplash.com/photo-1740602854081-7d6ca6778d35?fm=jpg&q=70&w=900&auto=format&fit=crop"
+             alt="Selene, the tarot reader, sitting by the water"
+             loading="lazy" />
+      </div>
+      <div class="about-text">
+        <p class="eyebrow">Your Reader</p>
+        <h2 class="section-title">Hi, I'm Selene</h2>
+        <p>I've been reading tarot for twelve years, since my grandmother handed me her worn deck and told me it was never about fortune. It was just about paying closer attention.</p>
+        <p>That's still how I read. Not to fix your future in place, but to help you slow down, notice what you already sense, and take the next step with a steadier hand. Every reading is calm, unhurried, and free of judgment.</p>
+        <a href="#book" class="about-sign">sit with me a while &rarr;</a>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- ===================== SERVICES ===================== -->
+  <section class="services" id="services">
+    <div class="services-wrap">
+      <div class="services-head">
+        <p class="eyebrow">Readings</p>
+        <h2 class="section-title">Pick Your Pour</h2>
+        <p class="lede">Every reading is over video or in person, with a recording sent afterward so you can revisit it anytime.</p>
+      </div>
+
+      <div class="cards-grid">
+        <article class="svc-card c-green">
+          <h3>One Sip</h3>
+          <span class="dur">1 card &middot; 15 min</span>
+          <p>A single card for a single question. The fastest way to a clear, honest nudge.</p>
+          <div class="svc-price">$20 <span>/ session</span></div>
+        </article>
+
+        <article class="svc-card c-lav">
+          <h3>The Quick Sip</h3>
+          <span class="dur">3 cards &middot; 30 min</span>
+          <p>One focused question, one clear spread. Perfect for a single decision or a gentle check-in.</p>
+          <div class="svc-price">$45 <span>/ session</span></div>
+        </article>
+
+        <article class="svc-card c-rose">
+          <h3>Two Cups</h3>
+          <span class="dur">5 cards &middot; 45 min</span>
+          <p>A reading for the heart: love, a bond, a connection at a crossroads. Our most-requested spread.</p>
+          <div class="svc-price">$65 <span>/ session</span></div>
+        </article>
+
+        <article class="svc-card c-pink">
+          <h3>The Full Pot</h3>
+          <span class="dur">10 cards &middot; 60 min</span>
+          <p>A deep dive into a bigger theme: love, work, a crossroads. We take our time with it together.</p>
+          <div class="svc-price">$80 <span>/ session</span></div>
+        </article>
+
+        <article class="svc-card c-blue">
+          <h3>The Year Ahead</h3>
+          <span class="dur">12 cards &middot; 75 min</span>
+          <p>A card for each month to map the season to come. A lovely birthday or new-year ritual.</p>
+          <div class="svc-price">$110 <span>/ session</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CARD PULL (signature) ===================== -->
+  <section class="pull" id="pull">
+    <div class="pull-inner">
+      <p class="eyebrow">Free &middot; No Booking Needed</p>
+      <h2 class="section-title">Pull a Card</h2>
+      <p class="pull-sub">Take a breath, hold a question in mind, and tap the deck. Consider it a tiny taste of a full reading.</p>
+
+      <div class="stage">
+        <!-- face-down deck -->
+        <div class="deck" id="deck" role="button" tabindex="0" aria-label="Tap to draw a tarot card">
+          <div class="back"></div>
+          <div class="back"></div>
+          <div class="back"></div>
+          <span class="deck-hint">tap to draw</span>
+        </div>
+
+        <!-- revealed card (filled in by JS) -->
+        <div class="reveal hidden" id="reveal" aria-live="polite"></div>
+      </div>
+
+      <div class="pull-again hidden" id="pullAgain">
+        <button class="btn btn-ghost" id="againBtn">Pull Another</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TESTIMONIALS ===================== -->
+  <section class="band testimonials" id="testimonials">
+    <div class="band-inner">
+    <div class="testi-head">
+      <p class="eyebrow">Love Notes</p>
+      <h2 class="section-title">Kind Words from the Table</h2>
+    </div>
+    <div class="testi-grid">
+      <article class="testi-card">
+        <div class="testi-stars" aria-label="Five stars"><span></span><span></span><span></span><span></span><span></span></div>
+        <blockquote>"Selene has the gentlest way of telling you exactly what you needed to hear. I left feeling lighter and weirdly brave."</blockquote>
+        <div class="testi-who">
+          <div class="testi-ava">PR</div>
+          <div><div class="testi-name">Priya R.</div></div>
+        </div>
+      </article>
+
+      <article class="testi-card">
+        <div class="testi-stars" aria-label="Five stars"><span></span><span></span><span></span><span></span><span></span></div>
+        <blockquote>"I was nervous it'd feel spooky or salesy. It was just cozy and kind, like tea with a wise friend. Booked again instantly."</blockquote>
+        <div class="testi-who">
+          <div class="testi-ava">DM</div>
+          <div><div class="testi-name">Devon M.</div></div>
+        </div>
+      </article>
+
+      <article class="testi-card">
+        <div class="testi-stars" aria-label="Five stars"><span></span><span></span><span></span><span></span><span></span></div>
+        <blockquote>"The Year Ahead reading became my whole journaling practice for the next twelve months. Worth every penny."</blockquote>
+        <div class="testi-who">
+          <div class="testi-ava">SK</div>
+          <div><div class="testi-name">Sam K.</div></div>
+        </div>
+      </article>
+    </div>
+    </div>
+  </section>
+
+  <!-- ===================== BOOKING ===================== -->
+  <section class="booking" id="book">
+    <div class="booking-wrap">
+      <p class="eyebrow">Book a session</p>
+      <h2 class="section-title">Let's find your seat</h2>
+      <p class="lede">Tell me a little about what's on your mind and I'll be in touch within a day to set a time.</p>
+
+      <!-- Note: vanilla form. No backend here, so JS just shows a friendly
+           confirmation. Easy to wire to a real service later. -->
+      <div class="form" id="bookForm">
+        <div class="field">
+          <label for="name">Your name</label>
+          <input type="text" id="name" placeholder="What should I call you?" />
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="you@example.com" />
+        </div>
+        <div class="field">
+          <label for="reading">Which reading?</label>
+          <select id="reading">
+            <option value="">Choose a reading&hellip;</option>
+            <option>One Sip · $20</option>
+            <option>The Quick Sip · $45</option>
+            <option>Two Cups · $65</option>
+            <option>The Full Pot · $80</option>
+            <option>The Year Ahead · $110</option>
+            <option>Not sure yet, help me pick</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="note">What's on your mind? <span style="font-weight:400;color:var(--ink-mut)">(optional)</span></label>
+          <textarea id="note" placeholder="A question, a situation, or just a vibe&hellip;"></textarea>
+        </div>
+        <button class="btn btn-primary" id="bookBtn" type="button">Request My Reading</button>
+        <p class="form-note" id="formNote" aria-live="polite"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer-deco" aria-hidden="true">
+      <span class="fstar"></span><span class="fstar"></span><span class="fstar"></span>
+      <span class="fmoon"></span>
+      <span class="fstar"></span><span class="fstar"></span><span class="fstar"></span>
+    </div>
+    <div class="footer-card">
+      <div class="brand"><span class="moon-mark" aria-hidden="true"><span class="mm-moon"></span></span> <span class="brand-name">Lunar Tea Room</span></div>
+      <p class="footer-tag">Cozy tarot, one warm cup at a time.</p>
+      <a href="#book" class="btn btn-primary footer-cta">Book a Session</a>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="TikTok">TikTok</a>
+        <a href="#" aria-label="Email">Email</a>
+      </div>
+      <p class="footer-fine">Readings are for reflection and entertainment. You're always the author of your own story.</p>
+      <p class="footer-fine">&copy; 2025 Lunar Tea Room. Made with care.</p>
+    </div>
+  </footer>
+
+  <!-- data first, then behavior -->
+  <script src="cards.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
