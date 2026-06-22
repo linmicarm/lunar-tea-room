@@ -2,6 +2,8 @@
 
 A fictional tarot reader's portfolio site: a calm, earthy, "lightworker" space where a visitor can read about the reader (Selene), browse reading tiers, pull a free card from a working 78-card deck, and request a booking. Built as a vanilla HTML/CSS/JS project to practice design systems, token-driven theming, and building an interactive feature without a framework.
 
+<img width="1899" height="932" alt="image" src="https://github.com/user-attachments/assets/5affb69e-3284-44c8-b334-75b67d510c7d" />
+
 **Live:** `https://linmicarm.github.io/lunar-tea-room/`
 
 ---
